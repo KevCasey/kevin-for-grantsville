@@ -8,68 +8,67 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Deseret_Peak_Wilderness_%2821507749844%29.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      background: #f4f4f4;
+      color: #333;
     }
     header {
-      background: rgba(0, 0, 50, 0.85);
-      padding: 2rem 1rem;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Deseret_Peak_Wilderness_%2821507749844%29.jpg') center/cover no-repeat;
+      color: white;
       text-align: center;
-      border-bottom: 4px solid #d00;
+      padding: 6rem 1rem;
+      position: relative;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 50, 0.55);
+      z-index: 1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
     }
     header h1 {
+      font-size: 3rem;
       margin: 0;
-      font-size: 2.5rem;
-      color: #fff;
     }
     header p {
       font-size: 1.2rem;
-      color: #ccc;
-    }
-    nav {
-      background: rgba(13, 13, 80, 0.9);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 0.75rem;
-      gap: 1.5rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+      color: #eee;
     }
     main {
-      max-width: 1000px;
+      max-width: 960px;
       margin: 2rem auto;
-      background: rgba(0, 0, 0, 0.75);
-      padding: 2rem;
-      border-radius: 10px;
+      padding: 0 1rem;
     }
     section {
       margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
     h2 {
-      color: #ffdd99;
-      border-bottom: 1px solid #ffcc88;
+      color: #013220;
+      border-bottom: 2px solid #026c3b;
       padding-bottom: 0.3rem;
     }
-    ul, p {
-      line-height: 1.6;
-    }
     .highlight {
-      background: rgba(255, 255, 255, 0.15);
+      background: #fef4dd;
       padding: 1rem;
-      border-left: 4px solid #ffc107;
+      border-left: 5px solid #ffc107;
       margin: 1rem 0;
     }
     footer {
-      background: rgba(13, 13, 80, 0.95);
+      background: #013220;
+      color: white;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
-      border-top: 4px solid #d00;
+      margin-top: 3rem;
+    }
+    a {
+      color: #026c3b;
     }
   </style>
 </head>
@@ -78,14 +77,8 @@
     <h1>Kevin for Grantsville City Council</h1>
     <p>Accountability. Transparency. Outcomes.</p>
   </header>
-  <nav>
-    <a href="#platform">Platform</a>
-    <a href="#budget">Budget Oversight</a>
-    <a href="#issues">Key Issues</a>
-    <a href="#contact">Contact</a>
-  </nav>
   <main>
-    <section id="platform">
+    <section>
       <h2>My Platform</h2>
       <ul>
         <li>Cut redundant spending and maximize value from every tax dollar</li>
@@ -94,7 +87,7 @@
         <li>Use data to prioritize needs, not politics</li>
       </ul>
     </section>
-    <section id="budget">
+    <section>
       <h2>Budget Accountability</h2>
       <p>Grantsville’s FY2026 budget increases outpace population growth in nearly every department.</p>
       <div class="highlight">
@@ -104,7 +97,7 @@
         <strong>Example:</strong> Police budget includes K9 programs and wage scale changes – all approved without public cost disclosures.
       </div>
     </section>
-    <section id="issues">
+    <section>
       <h2>Key Issues</h2>
       <p>Did you know that most of the resolutions passed by the City Council don’t list the actual cost of the proposals? As a Councilmember, I will:</p>
       <ul>
@@ -113,10 +106,10 @@
         <li>Push for digital transparency dashboards</li>
       </ul>
     </section>
-    <section id="contact">
+    <section>
       <h2>Contact</h2>
       <p>Want to get involved or share a concern?</p>
-      <p>Email: <a href="mailto:KC4GvCC@proton-mail.com" style="color: #ffcc88;">KC4GvCC@proton-mail.com</a></p>
+      <p>Email: <a href="mailto:KC4GvCC@proton-mail.com">KC4GvCC@proton-mail.com</a></p>
     </section>
   </main>
   <footer>
